@@ -1,9 +1,6 @@
-
 import logging
 import sys
 import string
-
-
 
 logging.basicConfig(filename=logfile, format='%(message)s',
                    level=logging.INFO, filemode='w')
@@ -52,11 +49,10 @@ def word_count():
         for word in data:
             word = word.translate(string.maketrans("",""),string.punctuation)
             word = word.lower()
-            if word not in word_counts.keys():
-                word_counts[word] = 1
-            else:
+            if(word_count.has_key(word)):
                 word_counts[word] += 1
-
+            else:
+                word_counts[word] = 1
     print word_counts
 
 word_count()
