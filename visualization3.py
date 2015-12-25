@@ -29,8 +29,17 @@ def plot_weather_data(turnstile_weather):
     However, due to the limitation of our Amazon EC2 server, we are giving you a random
     subset, about 1/3 of the actual data in the turnstile_weather dataframe.
     '''
-    plot = ggplot(turnstile_weather, aes('ENTRIESn_hourly', fill='rain')) + geom_bar(binwidth=100) + xlim(low=0, high=6000) + \
-    xlab("Hourly Entries - Bins of Size 100") + \
-    ylab("Hourly Entries - Count in each bin") + \
-    ggtitle("Hourly Entries Histogram - Rain vs. No Rain (Stacked)")
+    aggregated_df = turnstile_weather.groupby(['Hour']).sum()
+    aggregated_df['Hour'] = aggregated_df.index
+    plot = ggplot(aggregated_df, aes(x='Hour', y='ENTRIESn_hourly')) + \
+            geom_line(color='coral') + geom_point() + \
+            xlab("Hour of the day") + \
+            ylab("Hourly entries") + \
+            xlim(low=0, high=23) + \
+            ggtitle("Average subway entries by hour")
     return plot
+
+
+
+### Plots of the data.
+
