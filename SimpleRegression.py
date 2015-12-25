@@ -50,13 +50,8 @@ def predictions(weather_turnstile):
     # helper functions
     #
     dependentV = weather_turnstile['ENTRIESn_hourly']
-    weather_turnstile['weekend'] = weather_turnstile['DATEn'].map(lambda x: int(parse(x).weekday()== 5 or parse(x).weekday()== 6))
-    independentV = weather_turnstile[['rain', 'precipi', 'meantempi', 'fog', 'weekend' ]]
-
+    independentV = weather_turnstile['rain']
     # Add UNIT to features using dummy variables
-    dummy_units = pandas.get_dummies(weather_turnstile['UNIT'], prefix='unit')
-    dummy_hours = pandas.get_dummies(weather_turnstile['Hour'], prefix='hour')
-    independentV = independentV.join(dummy_units).join(dummy_hours)
     results = sm.OLS(dependentV, independentV).fit()
     print(results.summary())
     return results.predict()

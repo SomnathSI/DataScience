@@ -2,6 +2,11 @@
 import numpy as np
 import scipy
 import matplotlib.pyplot as plt
+import moreLinearRegression as lr
+import statsmodels.api as sm
+import pylab
+import scipy.stats as stats
+
 
 def plot_residuals(turnstile_weather, predictions):
     '''
@@ -18,4 +23,26 @@ def plot_residuals(turnstile_weather, predictions):
 
     plt.figure()
     (turnstile_weather['ENTRIESn_hourly'] - predictions).hist()
+
+
+    # Histogram for residuals
+    predictedVal = lr.predictions(turnstile_weather);
+    (weather_turnstile['ENTRIESn_hourly'] - predictedVal).hist(bins = 100)
+
+    ## line chart for residuals
+    plt.plot(weather_turnstile['ENTRIESn_hourly'] - predictedVal);
+    plt.ylabel('Residuals')
+    plt.show();
+
+    ## qqplot of the residuals to test for normality
+    stats.probplot(weather_turnstile['ENTRIESn_hourly'] - predictedVal, dist="norm", plot=pylab)
+    pylab.show();
+
     return plt
+
+
+# plt.close('all');
+# pylab.close('all');
+
+
+
