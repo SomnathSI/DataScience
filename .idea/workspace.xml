@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="005543ff-1319-4b83-a6d4-06cd53477599" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SimpleRegression.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/visualization3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/moreLinearRegression.py" afterPath="$PROJECT_DIR$/moreLinearRegression.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subwayPlots.py" afterPath="$PROJECT_DIR$/subwayPlots.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualization1.py" afterPath="$PROJECT_DIR$/visualization1.py" />
-    </list>
+    <list default="true" id="005543ff-1319-4b83-a6d4-06cd53477599" name="Default" comment="" />
     <ignored path="DataScience.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -71,8 +64,8 @@
       <file leaf-file-name="visualization3.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/visualization3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5778146">
-              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.47847682">
+              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -151,7 +144,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="40" />
+    <option name="x" value="94" />
+    <option name="y" value="117" />
     <option name="width" value="1280" />
     <option name="height" value="724" />
   </component>
@@ -438,7 +432,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="40" width="1280" height="724" extended-state="0" />
+    <frame x="94" y="117" width="1280" height="724" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16235864" sideWeight="0.49056605" order="1" side_tool="false" content_ui="tabs" />
@@ -850,8 +844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/visualization3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5778146">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.47847682">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
